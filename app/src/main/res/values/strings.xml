@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Calculator</string>
+    <string name="course">CALCULATOR</string>
+    <string name="btnClear">CLEAR</string>
 </resources>
