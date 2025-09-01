@@ -27,6 +27,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resultTv = findViewById(R.id.result_tv);
         solutionTv = findViewById(R.id.solution_tv);
 
+        assignId(btnC, R.id.button_c);
+        assignId(btnBrackOpen, R.id.button_open_bracket);
+        assignId(btnBrackClose, R.id.button_close_bracket);
+
+        assignId(btnDiv, R.id.button_divide);
+        assignId(btnMult, R.id.button_multiply);
+        assignId(btnPlus, R.id.button_add);
+        assignId(btnMinus, R.id.button_minus);
+        assignId(btnEquals, R.id.button_equals);
+
+        assignId(btn0, R.id.button_0);
+        assignId(btn1, R.id.button_1);
+        assignId(btn2, R.id.button_2);
+        assignId(btn3, R.id.button_3);
+        assignId(btn4, R.id.button_4);
+        assignId(btn5, R.id.button_5);
+        assignId(btn6, R.id.button_6);
+        assignId(btn7, R.id.button_7);
+        assignId(btn8, R.id.button_8);
+        assignId(btn9, R.id.button_9);
+
+        assignId(btnAC, R.id.button_ac);
+        assignId(btnDot, R.id.button_dot);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
