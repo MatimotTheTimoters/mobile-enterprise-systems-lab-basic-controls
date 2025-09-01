@@ -61,6 +61,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_divide"
+                android:backgroundTint="@color/orange"
                 android:text="/"
                 />
 
