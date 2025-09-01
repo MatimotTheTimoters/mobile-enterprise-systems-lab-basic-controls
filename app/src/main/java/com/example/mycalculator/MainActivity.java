@@ -64,7 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onClick(View v) {
-
+    public void onClick(View view) {
+        MaterialButton btn = (MaterialButton) view;
+        String btnTxt = btn.getText().toString();
+        solutionTv.setText(btnTxt);
     }
 }
