@@ -1,6 +1,7 @@
 package com.example.mycalculator;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -11,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView solutionTv, resultTv;
     MaterialButton btnC, btnBrackOpen, btnBrackClose,
                    btnDiv, btnMult, btnPlus, btnMinus, btnEquals,
@@ -28,5 +29,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
