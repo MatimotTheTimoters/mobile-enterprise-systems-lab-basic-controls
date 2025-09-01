@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     TextView solutionTv, resultTv;
     MaterialButton btnC, btnBrackOpen, btnBrackClose,
                    btnDiv, btnMult, btnPlus, btnMinus, btnEquals,
-                   btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
+                   btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9,
+                   btnAC, btnDot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
