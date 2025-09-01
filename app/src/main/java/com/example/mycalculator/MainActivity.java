@@ -67,6 +67,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         MaterialButton btn = (MaterialButton) view;
         String btnTxt = btn.getText().toString();
-        solutionTv.setText(btnTxt);
+        String dataToCalculate = solutionTv.getText().toString();
+        dataToCalculate = dataToCalculate + btnTxt;
+        solutionTv.setText(dataToCalculate);
     }
 }
