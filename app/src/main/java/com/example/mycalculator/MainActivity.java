@@ -9,8 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.databinding.tool.Context;
 
 import com.google.android.material.button.MaterialButton;
+
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.Scriptable;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView solutionTv, resultTv;
@@ -87,5 +91,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         solutionTv.setText(dataToCalculate);
+
+        String finalResult = getResult(dataToCalculate);
+
+        if (!finalResult.equals("Error")) {
+            resultTv.setText(finalResult);
+        }
+    }
+
+    String getResult(String data) {
+        try {
+            Context context = Context.enter();
+            context.setOptimizationLevel(-1);
+            Scriptable scriptable = context.initStandardObjects();
+            String finalResult = context.evaluateString(scriptable, data, "Javascript", 1, null).toString();
+            return finalResult;
+        } catch (Exception e) {
+            return "Error";
+        }
     }
 }
