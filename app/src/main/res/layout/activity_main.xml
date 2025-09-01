@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,7 +15,7 @@
         android:text="0"
         android:textSize="32dp"
         android:textAlignment="textEnd"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_above="@id/result_tv"
         android:layout_margin="16dp"
         />
@@ -26,7 +27,7 @@
         android:text="0"
         android:textSize="64dp"
         android:textAlignment="textEnd"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_above="@id/buttons_layout"
         android:layout_margin="16dp"
         />
